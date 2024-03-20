@@ -7,18 +7,19 @@ import markdown
 import re
 
 # evaluation period
-issue_start = dt.date(int(2023),int(12),int(1))
-issue_end   = dt.date(int(2024),int(1),int(1))
+issue_start = dt.date(int(2024),int(1),int(1))
+issue_end   = issue_start + pd.DateOffset(months=1)
+issue_prevMonth = issue_start - pd.DateOffset(months=1)
 
 issue_month = issue_start.strftime('%m')
 issue_year = issue_start.strftime('%Y')
-issue_monthStr = 'December'
-issue_prevMonthStr = 'November'
+issue_monthStr = issue_start.strftime("%B")
+issue_prevMonthStr = issue_prevMonth.strftime("%B")
+issue_nextMonthStr = issue_end.strftime("%B")
 # grab the csv file for the desired date
 yearMonthStr = issue_year + '-' + issue_month
 # concat date into base url
 url = 'https://raw.githubusercontent.com/bochinchero/dcrsnapshots/main/' + yearMonthStr + '/monthlyStats.csv'
-print(url)
 # create pd dataframe with raw csv data
 data = pd.read_csv(url)
 # set id as the index
@@ -26,11 +27,12 @@ data = data.set_index('id')
 # convert to lookup dictionary
 dataDict = data.to_dict('index')
 # updates the dictionary with the issue information
-dataDict['Issue'] = {'Month':issue_month,'Year':issue_year,'PrevMonthStr':issue_prevMonthStr,'MonthStr':issue_monthStr}
+dataDict['Issue'] = {'Month':issue_month,'Year':issue_year,'PrevMonthStr':issue_prevMonthStr,'MonthStr':issue_monthStr,
+                     'nextMonthStr':issue_nextMonthStr}
 
 # open the template markdown file
 f = open('../template/Template.md', 'r')
-htmlmd = markdown.markdown( f.read() )
+htmlmd = f.read()
 # find a list of all variables - those tagged in curly brackets {}
 res = re.findall(r'\{.*?\}', htmlmd)
 # replace variables with values from the lookup dictionary
