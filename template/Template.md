@@ -411,7 +411,7 @@ _DCRDEX is a non-custodial, privacy-respecting exchange for trustless trading, p
 
 In {Issue.MonthStr} the daily DCR/USD exchange rate, as tracked by [Coinmetrics](https://rates.coinmetrics.io/) opened at ${PriceUSD.Open} and closed at ${PriceUSD.Close}, reaching a high of ${PriceUSD.High} on {PriceUSD.High Date} and a low of ${PriceUSD.Low} on {PriceUSD.Low Date}.
 
-![Daily DCR/USD Price - Data: Coinmetrics](https://github.com/bochinchero/dcrsnapshots/blob/main/{Issue.Year}-{Issue.Month}/1920/Markets_USD_Price_Zoomedidaw.png?raw=true "Daily DCR/USD Price - Data: Coinmetrics")
+![Daily DCR/USD Price - Data: Coinmetrics](https://github.com/bochinchero/dcrsnapshots/blob/main/{Issue.Year}-{Issue.Month}/1920/Markets_USD_Price_Zoomed.png?raw=true "Daily DCR/USD Price - Data: Coinmetrics")
 
 Averaged over the month, the DCR/USD exchange rate was ${PriceUSD.MoMean}, representing a {PriceUSD.MoMeanChg}% change over the previous month of {Issue.PrevMonthStr}.
 
@@ -429,25 +429,26 @@ Realized Value in USD, as tracked by [Coinmetrics](https://rates.coinmetrics.io/
 
 [Back to Contents](#contents)
 
-In {Issue.MonthStr} the daily DCR/BTC exchange rate, as tracked by [Coinmetrics](https://rates.coinmetrics.io/) opened at ${PriceBTC.Open} and closed at ${PriceBTC.Close}, reaching a high of ${PriceBTC.High} on {PriceBTC.High Date} and a low of ${PriceBTC.Low} on {PriceBTC.Low Date}.
+###  DCR/BTC
 
-![Daily DCR/BTC Price - Data: Coinmetrics](https://github.com/bochinchero/dcrsnapshots/blob/main/{Issue.Year}-{Issue.Month}/1920/Markets_BTC_Price_Zoomedidaw.png?raw=true "Daily DCR/BTC Price - Data: Coinmetrics")
+In {Issue.MonthStr} the daily DCR/BTC exchange rate, as tracked by [Coinmetrics](https://rates.coinmetrics.io/) opened at {PriceBTC.Open} BTC and closed at {PriceBTC.Close} BTC, reaching a high of {PriceBTC.High} BTC on {PriceBTC.High Date} and a low of {PriceBTC.Low} BTC on {PriceBTC.Low Date}.
 
-Averaged over the month, the DCR/BTC exchange rate was ${PriceBTC.MoMean}, representing a {PriceBTC.MoMeanChg}% change over the previous month of {Issue.PrevMonthStr}.
+![Daily DCR/BTC Price - Data: Coinmetrics](https://github.com/bochinchero/dcrsnapshots/blob/main/{Issue.Year}-{Issue.Month}/1920/Markets_BTC_Price_Zoomed.png?raw=true "Daily DCR/BTC Price - Data: Coinmetrics")
 
-Market Capitalization in BTC, as tracked by [Coinmetrics](https://rates.coinmetrics.io/) opened at ${CapMarketBTC.Open} and closed at ${CapMarketBTC.Close}, reaching a high of ${CapMarketBTC.High} on {CapMarketBTC.High Date} and a low of ${CapMarketBTC.Low} on {CapMarketBTC.Low Date}. Averaged over the month, the Market Capitalization in BTC was ${CapMarketBTC.MoMean}, representing a {CapMarketBTC.MoMeanChg}% change over the previous month of {Issue.PrevMonthStr}.
+Averaged over the month, the DCR/BTC exchange rate was {PriceBTC.MoMean} BTC, representing a {PriceBTC.MoMeanChg}% change over the previous month of {Issue.PrevMonthStr}.
 
-Realized Value in BTC opened at ${CapRealBTC.Open} and closed at ${CapRealBTC.Close}, reaching a high of ${CapRealBTC.High} on {CapRealBTC.High Date} and a low of ${CapRealBTC.Low} on {CapRealBTC.Low Date}. Averaged over the month, the Market Capitalization in BTC was ${CapRealBTC.MoMean}, representing a {CapRealBTC.MoMeanChg}% change over the previous month of {Issue.PrevMonthStr}
+Market Capitalization in BTC, as tracked by [Coinmetrics](https://rates.coinmetrics.io/) opened at {CapMarketBTC.Open} BTC and closed at {CapMarketBTC.Close} BTC, reaching a high of {CapMarketBTC.High} BTC on {CapMarketBTC.High Date} and a low of {CapMarketBTC.Low} BTC on {CapMarketBTC.Low Date}. Averaged over the month, the Market Capitalization in BTC was {CapMarketBTC.MoMean} BTC, representing a {CapMarketBTC.MoMeanChg}% change over the previous month of {Issue.PrevMonthStr}.
 
-[Staked Realized Value](https://bochinchero.medium.com/decred-on-chain-staked-realised-value-444ab5a146d8#introducing-the-staked) in BTC, opened at ${StakedRealizedValBTC.Open} and closed at ${StakedRealizedValBTC.Close}, reaching a high of ${StakedRealizedValBTC.High} on {StakedRealizedValBTC.High Date} and a low of ${StakedRealizedValBTC.Low} on {StakedRealizedValBTC.Low Date}. Averaged over the month, the Staked Realized Value in BTC was ${StakedRealizedValBTC.MoMean}, representing a {StakedRealizedValBTC.MoMeanChg}% change over the previous month of {Issue.PrevMonthStr}.
+Realized Value in BTC opened at {CapRealBTC.Open} and closed at {CapRealBTC.Close} BTC, reaching a high of {CapRealBTC.High} BTC on {CapRealBTC.High Date} and a low of {CapRealBTC.Low} BTC on {CapRealBTC.Low Date}. Averaged over the month, the Market Capitalization in BTC was {CapRealBTC.MoMean} BTC, representing a {CapRealBTC.MoMeanChg}% change over the previous month of {Issue.PrevMonthStr}.
 
-[Supply Adjusted Staked Realized Value](https://bochinchero.medium.com/decred-on-chain-staked-realised-value-444ab5a146d8#introducing-the-staked) in BTC, opened at ${SupplyAdjustedSRV.Open} and closed at ${SupplyAdjustedSRV.Close}, reaching a high of ${SupplyAdjustedSRV.High} on {SupplyAdjustedSRV.High Date} and a low of ${SupplyAdjustedSRV.Low} on {SupplyAdjustedSRV.Low Date}. Averaged over the month, the Supply Adjusted Staked Realized Value in BTC was ${SupplyAdjustedSRV.MoMean}, representing a {SupplyAdjustedSRV.MoMeanChg}% change over the previous month of {Issue.PrevMonthStr}.
+[Staked Realized Value](https://bochinchero.medium.com/decred-on-chain-staked-realised-value-444ab5a146d8#introducing-the-staked) in BTC, opened at {StakedRealizedValBTC.Open} BTC and closed at {StakedRealizedValBTC.Close} BTC, reaching a high of {StakedRealizedValBTC.High} BTC on {StakedRealizedValBTC.High Date} and a low of {StakedRealizedValBTC.Low} BTC on {StakedRealizedValBTC.Low Date}. Averaged over the month, the Staked Realized Value in BTC was {StakedRealizedValBTC.MoMean} BTC, representing a {StakedRealizedValBTC.MoMeanChg}% change over the previous month of {Issue.PrevMonthStr}.
+
+[Supply Adjusted Staked Realized Value](https://bochinchero.medium.com/decred-on-chain-staked-realised-value-444ab5a146d8#introducing-the-staked) in BTC, opened at {SupplyAdjustedSRV.Open} BTC and closed at {SupplyAdjustedSRV.Close} BTC, reaching a high of {SupplyAdjustedSRV.High} BTC on {SupplyAdjustedSRV.High Date} and a low of {SupplyAdjustedSRV.Low} BTC on {SupplyAdjustedSRV.Low Date}. Averaged over the month, the Supply Adjusted Staked Realized Value in BTC was {SupplyAdjustedSRV.MoMean} BTC, representing a {SupplyAdjustedSRV.MoMeanChg}% change over the previous month of {Issue.PrevMonthStr}.
 
 ![Market Valuations Zoomed - Data: Coinmetrics](https://github.com/bochinchero/dcrsnapshots/blob/main/{Issue.Year}-{Issue.Month}/1920/Markets_BTC_Valuations_Zoomed.png?raw=true "Market Valuations Zoomed")
 
 ![Market Valuations Overall - Data: Coinmetrics](https://github.com/bochinchero/dcrsnapshots/blob/main/{Issue.Year}-{Issue.Month}/1920/Markets_BTC_Valuations_Overall.png?raw=true "Market Valuations Overall")
 
-###  DCR/BTC
 
 [Back to Contents](#contents)
 
